@@ -26,4 +26,8 @@ public class Validator<T> {
 
         return errors;
     }
+
+    public static <T> Validator<T> builder() {
+        return new Validator<>();
+    }
 }
